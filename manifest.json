@@ -1,0 +1,22 @@
+{
+  "name": "Image Upload Extension",
+  "description": "Choose your images and upload to ideasoft",
+  "version": "1.0",
+  "manifest_version": 2,
+  "content_scripts": [{
+	"matches": ["<all_urls>"],
+	"js": ["assets/js/jquery.js", "assets/js/sweetalert.js", "assets/js/script.js"],
+  "css": ["assets/css/style.css"],
+	"all_frames": false,
+  "match_about_blank": false
+}],
+  "background": {
+    "scripts": ["assets/js/jquery.js", "assets/js/script.js"]
+  },
+  "permissions": [
+	"storage"
+  ],
+  "browser_action": {
+	  "default_title": "Image Upload Extension"
+  }
+}
