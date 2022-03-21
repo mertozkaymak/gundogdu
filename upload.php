@@ -23,7 +23,7 @@
 
                 $currentImages[$counter]["name"] = $file;
                 $currentImages[$counter]["folder"] = $targetFolder;
-                $currentImages[$counter]["src"] = "https://sumelabilisim.com/cdn/digitalfikirler/products/" . $targetFolder . "/" . $file;
+                $currentImages[$counter]["src"] = "***/products/" . $targetFolder . "/" . $file;
 
                 $counter++;
 
@@ -62,7 +62,7 @@
                     $fileImage = __DIR__ . "/products/" . $targetFolder . "/" . $filename . "." . $ext;
 
                     if(move_uploaded_file($file["tmp_name"], $fileImage)){
-                        echo json_encode(array("https://sumelabilisim.com/cdn/digitalfikirler/products/" . $targetFolder . "/" . $filename . "." . $ext));
+                        echo json_encode(array("***/products/" . $targetFolder . "/" . $filename . "." . $ext));
                     }
 
                 }
