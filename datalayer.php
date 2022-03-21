@@ -7,9 +7,9 @@
         protected $dbh;
         protected $conInfo = array(
             "HOST" => "localhost",
-            "DBNAME" => "gndcente_cdn",
-            "USER" => "gndcente_cdnuser",
-            "PASS" => "m72ltIrX]jAR"
+            "DBNAME" => "***",
+            "USER" => "***",
+            "PASS" => "***"
         );
 
         public function __construct($id, $images) {
