@@ -18,7 +18,7 @@
         targetId = pageParams.product.id;
 
         $.ajax({
-            url: "https://sumelabilisim.com/cdn/digitalfikirler/datalayer.php",
+            url: "***/datalayer.php",
             type: "POST",
             data: {
                 productId: targetId
