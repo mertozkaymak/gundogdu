@@ -90,7 +90,7 @@
     function postImageData(image, name, length){
 
         $.ajax({
-            url: "https://sumelabilisim.com/cdn/digitalfikirler/upload.php",
+            url: "***/upload.php",
             type: "POST",
             data: image,
             contentType: false,
@@ -158,7 +158,7 @@
     function deleteImage(name, folder, target){
         
         $.ajax({
-            url: "https://sumelabilisim.com/cdn/digitalfikirler/upload.php",
+            url: "***/upload.php",
             type: "POST",
             data: {
                 filename: name,
@@ -230,7 +230,7 @@
         folder = getProductId();
 
         $.ajax({
-            url: "https://sumelabilisim.com/cdn/digitalfikirler/upload.php",
+            url: "***/upload.php",
             type: "POST",
             data: {
                 folder: folder,
@@ -435,7 +435,7 @@
         $(this).parents(".swal2-footer").find("#uploadedImages table tbody tr, #list-of-images table tbody tr").each(function(){
             
             data = new Object();
-            data.src = "https://sumelabilisim.com/cdn/digitalfikirler/products/" + $(this).find(".left-content input").attr("data-folder") + "/" + `${($(this).find(".left-content input").val() !== "") ? $(this).find(".left-content input").val() : $(this).find(".left-content input").attr("placeholder")}` + "." + $(this).find(".left-content input").attr("data-ext");
+            data.src = "***/products/" + $(this).find(".left-content input").attr("data-folder") + "/" + `${($(this).find(".left-content input").val() !== "") ? $(this).find(".left-content input").val() : $(this).find(".left-content input").attr("placeholder")}` + "." + $(this).find(".left-content input").attr("data-ext");
 
             if(data.src.indexOf(".undefined") !== -1){
                 data.src = data.src.replace(".undefined", "");
@@ -450,7 +450,7 @@
         }
 
         $.ajax({
-            url: "https://sumelabilisim.com/cdn/digitalfikirler/datalayer.php",
+            url: "***/datalayer.php",
             type: "POST",
             data: {
                 id: productId,
@@ -537,7 +537,7 @@
         self = $(this);
 
         $.ajax({
-            url: "https://sumelabilisim.com/cdn/digitalfikirler/upload.php",
+            url: "***/upload.php",
             type: "POST",
             data: {
                 name: fullname,
